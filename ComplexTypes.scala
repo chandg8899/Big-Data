@@ -9,7 +9,7 @@ object ComplexTypesDemo extends Serializable {
   def main(args: Array[String]): Unit = {
     val spark = SparkSession.builder()
       .master("local[3]")
-      .appName("Complex Types Demo")
+      .appName("Complex Types")
       .getOrCreate()
 
     val schema = StructType(List(
